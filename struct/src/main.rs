@@ -52,6 +52,11 @@ fn main() {
 
     println!("{}", user1.email);
 
+    let email = user1.email; // user1のemailの所有権がemailにムーブする
+    println!("{}", email);
+    println!("{}", user1.username); // usernameはムーブしていないのでアクセス可能
+    // println!("{}", user1.email); // emailはムーブしているのでアクセス不可(コンパイルエラー)
+
     // メールアドレスを変更
     user1.email = String::from("anotheremail@example.com");
 
