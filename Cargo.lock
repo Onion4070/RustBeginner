@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "struct_project"
+name = "RustBeginner"
 version = "0.1.0"
